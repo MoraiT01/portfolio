@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #F5F5F5;
+  }
+  #animationButton {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transform: scale(1, 1);
+  }
+  #animationButton.animate {
+    animation: buttonAnimate 1s forwards;
+  }
+  @keyframes buttonAnimate {
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
